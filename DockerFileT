@@ -1,4 +1,2 @@
-#w opaciu o pierwszy wykonywanie tylko testów
-
-FROM buildpetclinic:latest
-RUN ./gradlew test
+FROM builder AS build
+RUN ./gradlew build -x test
