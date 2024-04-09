@@ -6,5 +6,3 @@ RUN apt-get update && apt-get install -y git
 RUN git clone https://github.com/spring-projects/spring-petclinic
 WORKDIR /Pulpit/DevOps/lab03/spring-petclinic
 
-FROM builder AS build
-RUN ./gradlew build -x test
