@@ -1,0 +1,8 @@
+FROM gradle:jdk17 
+
+COPY --from=build /src /app
+
+WORKDIR /app
+
+
+CMD ["java", "-jar", "app.jar"]
