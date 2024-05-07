@@ -1,2 +1,2 @@
-FROM spring-petclinic 
+FROM spring-petclinic AS builder
 RUN ./gradlew test
